@@ -10,13 +10,14 @@ Make sure to learn what the starter code does!!
 
 body{
   background-image: url('../images/pigeonbg.jpg');
+  background-color: #DDDDDD
+  background-repeat: no-repeat;
   color: black;
   font-family: Andika; sans-serif;
   font-size: 16px;
   margin: 1.2em;
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
-  padding-top: 10px;
 }
 
 main{
@@ -35,40 +36,70 @@ caption{
 }
 
 
-p{}
+p{
+  padding-top: 10px;
+  font-family: Andika; sans-serif;
+  font-size: 16px;
+}
 
-a:link{
+a{
   color: #C12258;
   text-decoration: underline;
   text-decoration-style: wavy;
 }
 
+a:focus{
+  border: 2px;
+  color: #000000;
+}
+
 table{
     border: 2px solid black;
-    padding: 15 px;
+    border-radius: 15px;
     margin-left:auto; 
     margin-right:auto;
     text-align: center;
-    border-collapse: collapse;
+    border-collapse: separate;
 }
+
+table, th, td{
+    table-layout: fixed;
+    width: auto;
+    text-align: center;
+    border-top: 2px solid black;
+/*    padding: 0px;*/
+
+}
+
+
 
 thead tr:first-child th:first-child{
     border-radius: 15px 0 0 0;
-    border-collapse: collapse;
 }
 
-thead tr:first-child th:seventh-child{
+thead tr:first-child th:last-child{
     border-radius: 0 15px 0 0;
+}
+
+tbody: last-child tr:last-child th:first-child{
+  border-radius: 0 0 0 15px;
+}
+
+tbody tr:last-child td:last-child{
+  border-radius: 0 0 15px 0;
 }
 
 .colhead{
   background-color: #7e0820;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   min-width: 100px;
+  text-align: center;
+  padding: 10px;
 }
 
-.rowhead{}
+.rowhead{
+}
 
 td{
   padding: 15px;
@@ -87,7 +118,7 @@ tr:nth-child(odd){
 }
 
 tr:hover {
-  background-color: rgb(126,8,32,.5);
+  background-color: rgba(126,8,32,.5);
 }
 
 
@@ -96,8 +127,8 @@ footer{
   left:0px;
   bottom:0px;
   width:100%;
-  background:black;
+  background:#000000;
   text-align:center;
-  color: white;
+  color: #ffffff;
   min-height: 60px;
 }
